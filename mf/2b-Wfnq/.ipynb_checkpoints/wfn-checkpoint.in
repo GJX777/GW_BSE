@@ -1,0 +1,47 @@
+&control
+  calculation = 'bands'
+  prefix = 'MOSE2_WS2'
+  pseudo_dir = './pseudo/'
+  outdir = './out/'
+/
+&system
+   ecutwfc = 90.0
+   ibrav = 0
+   nat = 6
+   ntyp = 4
+   vdw_corr = 'dft-d3'
+/
+&electrons
+   electron_maxstep = 100
+   conv_thr = 1e-10
+   mixing_mode = 'plain'
+   mixing_beta = 0.7
+   mixing_ndim = 8
+   diagonalization = 'david'
+   diago_david_ndim = 4
+   diago_full_acc = .true.
+/
+CELL_PARAMETERS angstrom
+   3.234180129  -0.000000017   0.000000000
+  -1.617090565   2.800881799   0.000000000
+   0.000000000   0.000000000  25.000000000
+ATOMIC_SPECIES 
+Mo     95.96 Mo_ONCV_PBE_sr.upf
+S      32.065 S_ONCV_PBE_sr.upf
+Se     78.96 Se_ONCV_PBE_sr.upf
+W      183.84 W_ONCV_PBE_sr.upf
+ATOMIC_POSITIONS crystal
+W            -0.0000000000       -0.0000000000        0.3701598718
+S             0.3333333333        0.6666666667        0.4321359350
+S             0.3333333333        0.6666666667        0.3080257822
+Mo           -0.0000000000       -0.0000000000        0.6298495604
+Se            0.6666666667        0.3333333333        0.6977491822
+Se            0.6666666667        0.3333333333        0.5620796684
+K_POINTS crystal
+   6
+   0.001 0.0 0.0 1.0
+   0.001 0.333333333 0.0 2.0
+   0.001 0.666666667 0.0 2.0
+   0.334333333 0.0 0.0 1.0
+   0.334333333 0.333333333 0.0 2.0
+   0.667666667 0.0 0.0 1.0

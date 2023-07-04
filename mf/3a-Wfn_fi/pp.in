@@ -1,0 +1,14 @@
+&input_pw2bgw
+   prefix = 'MOSE2_WS2'
+   outdir = './out/'
+   real_or_complex = 2
+   wfng_flag = .true.
+   wfng_file = 'WFN'
+   wfng_kgrid = .true.
+   wfng_nk1 = 8
+   wfng_nk2 = 8
+   wfng_nk3 = 1
+   wfng_dk1 = 0.47
+   wfng_dk2 = 0.37
+   wfng_dk3 = 0.0
+/

@@ -1,0 +1,156 @@
+
+ BerkeleyGW version 3.0
+ BSE/Kernel code, Complex version, run on 26-Jun-2023 at 06:19:49 -0700
+
+                                                                 ..o.          
+                                                                .oxxo.         
+                                                               .oxxxxo...      
+                                                               oxxxxxxo.       
+                                                              .oxxxxxxx.       
+                                                              .ooooooxxo..     
+                                                              .oooooooxo..     
+                                                              .oooooxxo...     
+                                                       .........oxooo......    
+                                                 ............................  
+                                             ................................. 
+                                          .................................... 
+           .          ..oo. ....  .................................oooxxxxxxxo.
+     .............oxxxx@ox@@@x@x.....................o...........ooooooooooxx. 
+    .o.........oox@x.oo........xxx@@............ooxxxxo..........ooooxxxxxoxo  
+    .x........x@xxo...............o@xxo........oxxx@@@xoooooooooooooooxxxo...  
+    .o......ox@@o..................oox@o.....ooxxx@xoooxxxxxxxoooooooooooo.... 
+    o..ooooo@@xoooo....ooo...........x@o.....ooxxxxo   .oxxxxxxxxxxooooooo.... 
+    . .oooo@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....ooooox.     .oxx@@@@@xxoo........ 
+      .ooooxxxxxxxooooooxooooooooooooooxo...oooooxx.        ..ox@xxxoo.........
+      .ooooooxxxx@xoooooooooooooxxoooooooooooxxxxx.            .oxxooooooooxxo.
+     .oooooxxxxx@@@xxxxxxxxxxxxxxxxxxxxxxxxoxxxxo.                .oxxxxxxxxo. 
+   ....oooxxxxx@@@xo..oxxx@@@@@@xxxxoxxoooooooxx.                  .oxxxoo..   
+  .....ooxxxx@@xo.       ........    .ooooooooxxo                              
+  ..oooxxxx@@@o                       .oooooooxoo.                             
+  ....oxooxxxxx.                       .ooo..oooo.                             
+  .....o.ooxxxxxo.                     .oooooooxo.                             
+ ......ooooxxxxxxo.                     .ooooooxoo..                           
+........ooxxxxxxxo..                     .o....oxoo...                         
+.......ooooxxxxxxxo.                     ........oooo.                         
+.ooooooo..ooxxxxoooo.                    .........ooo...                       
+..oxo...ooooxxxoooo..                    .ooo......oooo...                     
+  .ooooo....o.                            .oxxxoo....ooo....                   
+    .oooooo...                              ...ooooo...ooo..                   
+       ...                                     .oo.......                      
+                                               ....ooo...                      
+                      __              __                                       
+ ______              [  |            [  |                 ._____  _          _ 
+|_   _ \              | |  _          | |                /  ___ \| |        | |
+  | |_) | .---.  _. _.| | / |  .---.  | | .---.  _    _ / /    \_|\ \  /\  / / 
+  |  __'./ /__\\[ /`\_| '' <  / /__\\ | |/ /__\\| \  | | |   _____ \ \/  \/ /  
+ _| |__| | \__. | |   | |`\ \ | \___. | || \___. \ \/ / \ \.___| |  \  /\  /   
+|_______/ \.__./[_]  [__|  \_] \.__./[___]\.__./  \  /   \.____./    \/  \/    
+                                                  / /                          
+                                                 /_/                           
+ --------------------------------------------------------------------------------
+ Please cite the main BerkeleyGW paper when using results from this calculation:
+
+ Jack Deslippe, Georgy Samsonidze, David A. Strubbe, Manish Jain, Marvin L.
+ Cohen, and Steven G. Louie, "BerkeleyGW: A Massively Parallel Computer Package
+ for the Calculation of the Quasiparticle and Optical Properties of Materials
+ and Nanostructures," Comput. Phys. Commun. 183, 1269 (2012)
+
+ Aditionally, PLEASE CITE ALL PAPERS REPORTED AT THE END OF THIS CALCULATION.
+ --------------------------------------------------------------------------------
+
+ Running MPI version (parallel)
+ Running with 320 MPI task(s)
+ Using OpenMP. Number of threads per MPI task: 2
+
+ Compilation flags:
+ - Compiler: GNU
+ - Para. flags: MPI, OMP
+ - Math  flags: USESCALAPACK, UNPACKED, USEFFTW3, HDF5
+ - Debug flags: 
+
+ Calculating the kernel only for (v,c)->(v',c') transitions.
+
+ Running with verbosity level 1 (default).
+
+ We are doing a calculation with zero exciton momentum
+
+
+ Running with semiconductor screening
+
+ We are communicating via MPI
+
+ We will not reuse wavefunction FFTs.
+ We are using a truncated Coulomb interaction: cell slab
+ Highest occupied band (coarse grid) = 36
+ Valence max    (coarse grid) = 3.472678 eV
+ Conduction min (coarse grid) = 4.559945 eV
+ Middle energy  (coarse grid) = 4.016312 eV
+ Fermi  energy  (coarse grid) = 4.016312 eV
+
+WARNING: Selected number of valence bands breaks degenerate subspace in WFN_co. Run degeneracy_check.x for allowable numbers.
+
+ Using symmetries to expand the coarse grid sampling
+
+ Parallelization strategy: (k)^2
+ - Breaking transitions into (v,c)^2 blocks
+ - Distributing each block with (k)^2 transitions to blocks of processors
+ Parallelizing calculation with blocks and pools:
+ - Number of transitions per block: 20736
+ - Number of MPI ranks per block: 320
+ - Number of transitions per MPI rank: 70
+
+ Memory available: 15506.7 MB per PE
+ Memory required for execution: 121.7 MB per PE
+ Extra memory required for vcoul: .0 MB per PE
+
+ Started reading wavefunctions (WFN_co) with 372 state(s) at 06:19:49.
+ [ 06:19:49 |   0% ] state   1 / 372.
+ [ 06:19:49 |   1% ] state   3 / 372, remaining: 0 s.
+ [ 06:19:50 |  10% ] state  38 / 372, remaining: 7 s.
+ [ 06:19:50 |  20% ] state  75 / 372, remaining: 5 s.
+ [ 06:19:51 |  30% ] state 112 / 372, remaining: 4 s.
+ [ 06:19:51 |  40% ] state 149 / 372, remaining: 3 s.
+ [ 06:19:52 |  50% ] state 187 / 372, remaining: 3 s.
+ [ 06:19:52 |  60% ] state 224 / 372, remaining: 2 s.
+ [ 06:19:53 |  70% ] state 261 / 372, remaining: 2 s.
+ [ 06:19:53 |  80% ] state 298 / 372, remaining: 1 s.
+ [ 06:19:54 |  90% ] state 335 / 372, remaining: 1 s.
+ Finished reading wavefunctions (WFN_co) at 06:19:54.
+ Elapsed time: 5 s.
+
+
+ Crystal wavefunctions read from file WFN_co:
+ - Number of k-points in WFN_co: 31
+ - Number of k-points in the full BZ of WFN_co: 144
+
+ GPU acceleration is : DISABLED
+
+ Algorithms used:
+ - calc_charge_matrix: CPU_ALGO
+ - g_sum             : CPU_ALGO
+ - w_sum             : CPU_ALGO
+
+ Calculation parameters:
+ - This is a Bethe-Salpeter-equation calculation.
+ - Cutoff of the bare Coulomb interaction (Ry): 90.00
+ - Cutoff of the screened Coulomb interaction (Ry): 9.00
+ - Number of G-vectors up to the bare int. cutoff: 22049
+ - Number of G-vectors up to the screened int. cutoff: 651
+ - Number of valence bands: 6
+ - Number of conduction bands: 6
+ - Number of spins: 1
+
+ Epsilon matrix for q->0 read from eps0mat.h5:
+ - Number of q-points: 1
+ - Dielectric cutoff (Ry): 9.00
+
+ Epsilon matrix for q/=0 read from epsmat.h5:
+ - Number of q-points: 30
+ - Dielectric cutoff (Ry): 9.00
+
+ Calculating Coulomb potential.
+ Note: for G=0: setting q0 =  0.001000  0.000000  0.000000
+
+ Started calculation of matrix elements with 70 blocked transition(s) at 06:19:55.
+ [ 06:19:55 |   0% ] blocked transition  1 / 70.
+ [ 06:20:01 |   3% ] blocked transition  3 / 70, remaining: 216 s.

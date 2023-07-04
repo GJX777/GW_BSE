@@ -1,0 +1,8 @@
+number_val_bands_fine 36
+number_val_bands_coarse 36
+
+number_cond_bands_fine 14
+number_cond_bands_coarse 14
+
+use_symmetries_coarse_grid
+no_symmetries_fine_grid

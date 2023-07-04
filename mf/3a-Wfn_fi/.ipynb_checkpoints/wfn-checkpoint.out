@@ -1,0 +1,200 @@
+
+     Program PWSCF v.7.1 starts on 26Jun2023 at  7:34:45 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     640 processor cores
+     Number of MPI processes:               320
+     Threads/MPI process:                     2
+
+     MPI processes distributed on    10 nodes
+     490559 MiB available memory on the printing compute node when the environment starts
+
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     Atomic positions and unit cell read from directory:
+     ./out/MOSE2_WS2.save/
+     Atomic positions from file used, from input discarded
+
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+
+     K-points division:     npool     =      16
+     R & G space division:  proc/nbgrp/npool/nimage =      20
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     one sub-group per band group will be used
+     custom distributed-memory algorithm (size of sub-group:  2*  2 procs)
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          46      46     14                 8798     8798    1544
+     Max          47      47     15                 8831     8831    1577
+     Sum         925     925    295               176313   176313   31199
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       6.1117  a.u.
+     unit-cell volume          =    1528.2542 (a.u.)^3
+     number of atoms/cell      =            6
+     number of atomic types    =            4
+     number of electrons       =        72.00
+     number of Kohn-Sham states=          200
+     kinetic-energy cutoff     =      90.0000  Ry
+     charge density cutoff     =     360.0000  Ry
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     celldm(1)=   6.111715  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000  -0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   7.729934 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577351 -0.000000 )  
+               b(2) = (  0.000000  1.154701 -0.000000 )  
+               b(3) = ( -0.000000 -0.000000  0.129367 )  
+
+
+     PseudoPot. # 1 for Mo read from file:
+     ./pseudo/Mo_ONCV_PBE_sr.upf
+     MD5 check sum: 49ef1f739fd5ee11f4a56dc5f994b343
+     Pseudo is Norm-conserving + core correction, Zval = 14.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1640 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 2 for S  read from file:
+     ./pseudo/S_ONCV_PBE_sr.upf
+     MD5 check sum: 0a7b1e3b8ed912888c590f2dcdc25257
+     Pseudo is Norm-conserving + core correction, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1146 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 3 for Se read from file:
+     ./pseudo/Se_ONCV_PBE_sr.upf
+     MD5 check sum: 0275729cb2f2a615607f5e2758d1d74e
+     Pseudo is Norm-conserving + core correction, Zval = 16.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1214 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+
+     PseudoPot. # 4 for W  read from file:
+     ./pseudo/W_ONCV_PBE_sr.upf
+     MD5 check sum: ed1f8c5deb4c334b28f6f49839c97859
+     Pseudo is Norm-conserving + core correction, Zval = 14.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1396 points,  7 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+                l(7) =   3
+
+     atomic species   valence    mass     pseudopotential
+        Mo            14.00    95.96000     Mo( 1.00)
+        S              6.00    32.06500     S ( 1.00)
+        Se            16.00    78.96000     Se( 1.00)
+        W             14.00   183.84000     W ( 1.00)
+
+      6 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           W   tau(   1) = (   0.0000000   0.0000000   2.8613115  )
+         2           S   tau(   2) = (  -0.0000001   0.5773502   3.3403824  )
+         3           S   tau(   3) = (  -0.0000001   0.5773502   2.3810191  )
+         4           Mo  tau(   4) = (   0.0000000   0.0000000   4.8686957  )
+         5           Se  tau(   5) = (   0.4999999   0.2886751   5.3935554  )
+         6           Se  tau(   6) = (   0.4999999   0.2886751   4.3448389  )
+
+     --------------------------------------------
+     DFT-D3 Dispersion Correction (3-body terms):
+     --------------------------------------------
+       Reference C6 values for interpolation: 
+
+         atom   Coordination number   C6
+         S          0.000           268.01
+         S          0.995           261.99
+         S          1.990           251.62
+         Se         0.000           427.35
+         Se         0.990           427.57
+         Se         1.981           421.05
+         Mo         0.000          1691.79
+         Mo         1.942          1004.01
+         Mo        11.056           674.22
+         W          0.000          1628.72
+         W          1.929          1086.81
+         W         10.915           796.19
+
+       Values used:
+
+         atom   Coordination number  R0_AB[au]  C6      C8
+         W          9.339            3.766    796.19 128250.55
+         S          3.633            3.128    251.62  12327.25
+         S          3.565            3.128    251.62  12327.25
+         Mo         9.571            3.547    674.22  77634.20
+         Se         4.240            3.332    421.05  29958.36
+         Se         4.312            3.332    421.05  29958.36
+
+         Molecular C6 ( Ry / a.u.^6 ) =     16099.11
+
+
+     number of k points=   409
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:   176313 G-vectors     FFT dimensions: (  40,  40, 288)
+
+     Estimated max dynamical RAM per process >      54.87 MB
+
+     Estimated total dynamical RAM >      17.15 GB
+
+     The potential is recalculated from file :
+     ./out/MOSE2_WS2.save/charge-density
+
+     Starting wfcs are   46 randomized atomic wfcs +  154 random wfcs
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap

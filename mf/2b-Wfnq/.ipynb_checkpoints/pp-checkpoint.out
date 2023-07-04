@@ -1,0 +1,42 @@
+
+     Program PW2BGW v.7.1 starts on 23Jun2023 at  1:27:37 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     640 processor cores
+     Number of MPI processes:               320
+     Threads/MPI process:                     2
+
+     MPI processes distributed on     5 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =     320
+     487483 MiB available memory on the printing compute node when the environment starts
+
+
+     Reading xml data from directory:
+
+     ./out/MOSE2_WS2.save/
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min           7       7      2                 2189     2189     366
+     Max           8       8      3                 2280     2280     455
+     Sum        2479    2479    769               716697   716697  126893
+
+     Using Slab Decomposition
+
+     Reading collected, re-writing distributed wavefunctions

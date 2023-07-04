@@ -1,0 +1,162 @@
+
+ BerkeleyGW version 3.0
+ Sigma code, Complex version, run on 26-Jun-2023 at 02:45:07 -0700
+
+                                                                 ..o.          
+                                                                .oxxo.         
+                                                               .oxxxxo...      
+                                                               oxxxxxxo.       
+                                                              .oxxxxxxx.       
+                                                              .ooooooxxo..     
+                                                              .oooooooxo..     
+                                                              .oooooxxo...     
+                                                       .........oxooo......    
+                                                 ............................  
+                                             ................................. 
+                                          .................................... 
+           .          ..oo. ....  .................................oooxxxxxxxo.
+     .............oxxxx@ox@@@x@x.....................o...........ooooooooooxx. 
+    .o.........oox@x.oo........xxx@@............ooxxxxo..........ooooxxxxxoxo  
+    .x........x@xxo...............o@xxo........oxxx@@@xoooooooooooooooxxxo...  
+    .o......ox@@o..................oox@o.....ooxxx@xoooxxxxxxxoooooooooooo.... 
+    o..ooooo@@xoooo....ooo...........x@o.....ooxxxxo   .oxxxxxxxxxxooooooo.... 
+    . .oooo@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@....ooooox.     .oxx@@@@@xxoo........ 
+      .ooooxxxxxxxooooooxooooooooooooooxo...oooooxx.        ..ox@xxxoo.........
+      .ooooooxxxx@xoooooooooooooxxoooooooooooxxxxx.            .oxxooooooooxxo.
+     .oooooxxxxx@@@xxxxxxxxxxxxxxxxxxxxxxxxoxxxxo.                .oxxxxxxxxo. 
+   ....oooxxxxx@@@xo..oxxx@@@@@@xxxxoxxoooooooxx.                  .oxxxoo..   
+  .....ooxxxx@@xo.       ........    .ooooooooxxo                              
+  ..oooxxxx@@@o                       .oooooooxoo.                             
+  ....oxooxxxxx.                       .ooo..oooo.                             
+  .....o.ooxxxxxo.                     .oooooooxo.                             
+ ......ooooxxxxxxo.                     .ooooooxoo..                           
+........ooxxxxxxxo..                     .o....oxoo...                         
+.......ooooxxxxxxxo.                     ........oooo.                         
+.ooooooo..ooxxxxoooo.                    .........ooo...                       
+..oxo...ooooxxxoooo..                    .ooo......oooo...                     
+  .ooooo....o.                            .oxxxoo....ooo....                   
+    .oooooo...                              ...ooooo...ooo..                   
+       ...                                     .oo.......                      
+                                               ....ooo...                      
+                      __              __                                       
+ ______              [  |            [  |                 ._____  _          _ 
+|_   _ \              | |  _          | |                /  ___ \| |        | |
+  | |_) | .---.  _. _.| | / |  .---.  | | .---.  _    _ / /    \_|\ \  /\  / / 
+  |  __'./ /__\\[ /`\_| '' <  / /__\\ | |/ /__\\| \  | | |   _____ \ \/  \/ /  
+ _| |__| | \__. | |   | |`\ \ | \___. | || \___. \ \/ / \ \.___| |  \  /\  /   
+|_______/ \.__./[_]  [__|  \_] \.__./[___]\.__./  \  /   \.____./    \/  \/    
+                                                  / /                          
+                                                 /_/                           
+ --------------------------------------------------------------------------------
+ Please cite the main BerkeleyGW paper when using results from this calculation:
+
+ Jack Deslippe, Georgy Samsonidze, David A. Strubbe, Manish Jain, Marvin L.
+ Cohen, and Steven G. Louie, "BerkeleyGW: A Massively Parallel Computer Package
+ for the Calculation of the Quasiparticle and Optical Properties of Materials
+ and Nanostructures," Comput. Phys. Commun. 183, 1269 (2012)
+
+ Aditionally, PLEASE CITE ALL PAPERS REPORTED AT THE END OF THIS CALCULATION.
+ --------------------------------------------------------------------------------
+
+ Running MPI version (parallel)
+ Running with 320 MPI task(s)
+ Using OpenMP. Number of threads per MPI task: 2
+
+ Compilation flags:
+ - Compiler: GNU
+ - Para. flags: MPI, OMP
+ - Math  flags: USESCALAPACK, UNPACKED, USEFFTW3, HDF5
+ - Debug flags: 
+
+ Running with verbosity level 1 (default).
+
+ Using the Generalized Plasmon Pole model
+
+ We are communicating via MPI
+
+ Computing CH as a partial sum over empty bands
+
+ Running with semiconductor screening
+
+ We are using a truncated Coulomb interaction: cell slab
+ Cutoff for Monte-Carlo average of Coulomb potential: 1.000E-012 Ry
+
+ Reading exchange-correlation matrix elements from vxc.dat file
+
+ Treating W within the Hybertsen-Louie Generalized Plasmon Pole model
+
+ Memory available: 15372.8 MB per PE
+
+ Read from eps0mat.h5:
+ - Number of G-vectors in the charge-density grid: 176313
+ - Max. number of G-vectors for dielectric matrices: 651
+ - Cutoff of the dielectric matrix (Ry): 9.000
+ - Number of imaginary frequencies: 0
+ - Total number of frequencies: 1
+ - Frequency dependence: 0
+ - Number of q-points: 1
+ - Q grid: 12 12 1
+
+ Read from epsmat.h5:
+ - Number of G-vectors in the charge-density grid: 176313
+ - Max. number of G-vectors for dielectric matrices: 717
+ - Cutoff of the dielectric matrix: 9.000
+ - Number of imaginary frequencies: 0
+ - Total number of frequencies: 1
+ - Frequency dependence: 0
+ - Number of q-points: 30
+ - Q grid: 12 12 1
+
+ Reading header of WFN_inner
+ Highest occupied band (unshifted grid) = 36
+ Valence max    (unshifted grid) = 3.472678 eV
+ Conduction min (unshifted grid) = 4.559945 eV
+ Middle energy  (unshifted grid) = 4.016312 eV
+ Fermi  energy  (unshifted grid) = 4.016312 eV
+
+
+ Calculation parameters:
+ - Cutoff of the bare Coulomb interaction (Ry): 90.00
+ - Cutoff of the screened Coulomb interaction (Ry): 9.00
+ - Number of G-vectors up to the bare int. cutoff: 22049
+ - Number of G-vectors up to the screened int. cutoff: 651
+ - Total number of bands in the calculation: 199
+ - Number of fully occupied valence bands: 36
+ - Number of partially occ. conduction bands: 0
+
+ Memory required for execution: 45.0 MB per PE
+ Memory required for vcoul: 114.4 MB per PE
+
+Run degeneracy_check.x for allowable numbers or set no_symmetries_q_grid.
+
+ERROR: Cannot correctly calculate Sigma for band 34 without its degenerate partner 33
+
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x7f3e6f475d4f in ???
+#1  0x7f3e6f475cbb in ???
+#2  0x7f3e6f477354 in ???
+#3  0x4b5ee6 in ???
+#4  0x55b846 in ???
+#5  0x5b10a0 in ???
+#6  0x4063bc in ???
+#7  0x7f3e6f46029c in ???
+#8  0x406419 in ???
+	at ../sysdeps/x86_64/start.S:120
+#9  0xffffffffffffffff in ???
+srun: error: nid004179: task 0: Aborted
+srun: Terminating StepId=10645992.0
+slurmstepd: error: *** STEP 10645992.0 ON nid004179 CANCELLED AT 2023-06-26T09:45:11 ***
+srun: error: nid006058: tasks 192-223: Terminated
+srun: error: nid006450: tasks 224-255: Terminated
+srun: error: nid004722: tasks 64-95: Terminated
+srun: error: nid005936: tasks 160-191: Terminated
+srun: error: nid005492: tasks 128-159: Terminated
+srun: error: nid006873: tasks 288-319: Terminated
+srun: error: nid004201: tasks 32-63: Terminated
+srun: error: nid006761: tasks 256-287: Terminated
+srun: error: nid004940: tasks 96-127: Terminated
+srun: error: nid004179: tasks 1-31: Terminated
+srun: Force Terminated StepId=10645992.0
